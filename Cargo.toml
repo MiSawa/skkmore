@@ -2,7 +2,11 @@
 name = "skkmore"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["mi_sawa <mi.sawa.1216+git@gmail.com>"]
+description = "An implementation of skk dictionary server that provides some convinient transformations."
+license = "MIT"
+repository = "https://github.com/MiSawa/skkmore"
+readme = "README.md"
 
 [dependencies]
+clap = { version = "4.1.6", features = ["derive"] }
