@@ -3,10 +3,22 @@ name = "skkmore"
 version = "0.1.0"
 edition = "2021"
 authors = ["mi_sawa <mi.sawa.1216+git@gmail.com>"]
-description = "An implementation of skk dictionary server that provides some convinient transformations."
+description = "An implementation of skk dictionary server that provides some convinient conversions."
 license = "MIT"
 repository = "https://github.com/MiSawa/skkmore"
 readme = "README.md"
 
 [dependencies]
-clap = { version = "4.1.6", features = ["derive"] }
+anyhow = "1.0.69"
+bytes = "1.4.0"
+clap = { version = "4.1.6", features = ["derive", "cargo"] }
+clap-verbosity-flag = "2.0.0"
+futures = "0.3.26"
+joinery = "3.1.0"
+log = "0.4.17"
+thiserror = "1.0.38"
+time = { version = "0.3.19", features = ["local-offset", "formatting", "macros"] }
+tokio = { version = "1.25.0", features = ["macros", "net", "rt", "tracing", "io-util"] }
+tokio-util = { version = "0.7.7", features = ["codec"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
